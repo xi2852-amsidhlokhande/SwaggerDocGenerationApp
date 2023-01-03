@@ -1,20 +1,23 @@
 package com.amsidh.mvc.api;
 
+import com.amsidh.mvc.model.Error;
 import com.amsidh.mvc.model.Pet;
-import jakarta.annotation.Generated;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.NativeWebRequest;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import jakarta.annotation.Generated;
 
 /**
  * A delegate to be called by the {@link PetsApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-03T19:26:23.961218200+05:30[Asia/Calcutta]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2023-01-03T20:07:03.019472900+05:30[Asia/Calcutta]")
 public interface PetsApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {
